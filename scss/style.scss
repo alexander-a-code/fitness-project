@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before  // Global Reset
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#header {
+  background-image: url(/img/boxing/guy-boxing.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-- Start Navbar --*/
+.navbar {
+  text-transform: uppercase;
+
+  & li {
+    padding-right: 0.7rem;
+  }
+
+  &-nav .nav-link {
+    color: white !important;
+    padding: 0.7rem 0;
+    float: right;
+
+    &:hover,
+    &.active {
+      color: #1ebba3 !important;
+    }
+  }
+
+  &-brand img {
+    width: 2rem;
+    margin-left: 30px;
+    // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    //   brightness(95%) contrast(80%);
+  }
+
+  &-toggler {
+    bottom: none !important;
+    outline: none !important;
+  }
+
+  & .svg-inline--fa {
+    color: #fff i !important;
+    font-size: 1.6rem;
+  }
+}
+/*-- End Navbar --*/
+
+/*-- Start Welcome Text Section --*/
+.welcome {
+  padding: 5rem 10rem;
+  margin-top: -140px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+  & h1 {
+    color: #333;
+  }
+
+  & .home-btn {
+    margin-top: 10px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #012f7e;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: thin;
+  }
+
+  & .btn:focus {
+    box-shadow: none;
+  }
+}
+/*-- End Welcome Text Section --*/
