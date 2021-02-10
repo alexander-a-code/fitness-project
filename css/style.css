@@ -63,3 +63,23 @@
     margin: 20px auto; }
 
 /*-- End About us Section --*/
+/*-- Start Services Section --*/
+#services {
+  background-color: #efefef;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  #services .col-md-4 {
+    padding: 20px; }
+    #services .col-md-4 .basi {
+      margin-top: 15rem; }
+    #services .col-md-4 h4 {
+      padding: 5px; }
+    #services .col-md-4 img {
+      width: 50px; }
+  #services p {
+    padding: 5px;
+    text-align: justify; }
+  #services .m-negative-1 {
+    margin-top: -1rem; }
+
+/*-- End Services Section --*/
