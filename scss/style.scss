@@ -4,7 +4,6 @@
 {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 #header {
@@ -77,3 +76,22 @@
   }
 }
 /*-- End Welcome Text Section --*/
+
+/*-- Start About us Section --*/
+#about {
+  padding: 100px 0 100px;
+
+  & .col-md-6 {
+    padding: 20px 10px;
+  }
+
+  & .yoga {
+    margin: 50px auto;
+  }
+
+  & h3 {
+    margin: 20px auto;
+  }
+}
+
+/*-- End About us Section --*/

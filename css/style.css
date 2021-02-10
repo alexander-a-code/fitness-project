@@ -2,8 +2,7 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+  padding: 0; }
 
 #header {
   background-image: url(/img/boxing/guy-boxing.jpg);
@@ -53,3 +52,14 @@
     box-shadow: none; }
 
 /*-- End Welcome Text Section --*/
+/*-- Start About us Section --*/
+#about {
+  padding: 100px 0 100px; }
+  #about .col-md-6 {
+    padding: 20px 10px; }
+  #about .yoga {
+    margin: 50px auto; }
+  #about h3 {
+    margin: 20px auto; }
+
+/*-- End About us Section --*/
