@@ -133,5 +133,22 @@
       padding: 10px 10px 10px 30px;
       border-radius: 10px;
       box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2); }
+      #testemonials .col-md-4 .review .svg-inline--fa {
+        color: #013f7e;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 0.1rem; }
+  #testemonials .mid-user {
+    margin: -30px 0 -30px; }
+  #testemonials span {
+    color: #013f7e; }
+  #testemonials h1 {
+    margin-bottom: 20px;
+    color: #013f7e; }
+  #testemonials h1 {
+    margin-bottom: 20px;
+    color: #013f7e; }
+  #testemonials p {
+    padding-bottom: 30px; }
 
 /*-- End Testemonials Section --*/

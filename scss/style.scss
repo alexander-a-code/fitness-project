@@ -200,7 +200,36 @@
       padding: 10px 10px 10px 30px;
       border-radius: 10px;
       box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+
+      & .svg-inline--fa {
+        color: #013f7e;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 0.1rem;
+      }
     }
+  }
+
+  & .mid-user {
+    margin: -30px 0 -30px;
+  }
+
+  & span {
+    color: #013f7e;
+  }
+
+  & h1 {
+    margin-bottom: 20px;
+    color: #013f7e;
+  }
+
+  & h1 {
+    margin-bottom: 20px;
+    color: #013f7e;
+  }
+
+  & p {
+    padding-bottom: 30px;
   }
 }
 /*-- End Testemonials Section --*/
