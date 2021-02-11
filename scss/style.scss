@@ -7,7 +7,7 @@
 }
 
 #header {
-  background-image: url(/img/boxing/guy-boxing.jpg);
+  background-image: url(/img/boxing/boxing-girl.jpg);
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -129,5 +129,57 @@
 /*-- End Services Section --*/
 
 /*-- Start Features Section --*/
+#features {
+  padding: 100px 0 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/img/sports/deadlift-powerlifter.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
 
+  & .col-md-6 {
+    padding: 20px;
+
+    .features {
+      &-box {
+        height: 120px;
+      }
+
+      &-left {
+        height: 120px;
+        width: 20%;
+        float: left;
+
+        & .svg-inline--fa {
+          padding-top: 13px;
+          font-size: 50px;
+        }
+      }
+
+      &-right {
+        height: 120px;
+        width: 80%;
+        float: left;
+
+        & h4 {
+          padding-top: 10px;
+          padding-left: 15px;
+          text-align: left;
+        }
+
+        & p {
+          padding-left: 15px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+// .col-md-6
+//   > .features-box
+//     >.feature-left
+//       >.fa-trophy
+
+//   .feature-right
 /*-- End Features Section --*/
