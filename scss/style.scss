@@ -240,6 +240,7 @@
   background-color: #013f7e;
   position: relative;
   box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+  margin-bottom: -160px;
 
   & h3,
   & p {
@@ -280,5 +281,55 @@
     /*End Subscribe button*/
   }
 }
-
 /*-- End Subscribe Section --*/
+
+/*-- Start Footer Section --*/
+#footer {
+  margin-top: 80px;
+  padding: 100px;
+  background-color: #efefef;
+
+  .footer-logo {
+    width: 30px;
+    margin: 25px 0 15px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  & h1 {
+    font-size: 15px;
+    text-align: left;
+    margin: 25px 0 25px;
+  }
+
+  & p {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  & .city {
+    margin-left: 37px;
+  }
+
+  & .svg-inline--fa {
+    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  & hr {
+    margin-top: 10px;
+  }
+
+  & .fa-heart {
+    color: red;
+    font-size: 17px;
+  }
+
+  & .copyright {
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/*-- End Footer Section --*/

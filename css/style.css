@@ -157,7 +157,8 @@
   padding: 50px 20px;
   background-color: #013f7e;
   position: relative;
-  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+  margin-bottom: -160px; }
   .subscribe h3, .subscribe p {
     color: #fff; }
   .subscribe .input-group {
@@ -185,3 +186,36 @@
       color: #fff; }
 
 /*-- End Subscribe Section --*/
+/*-- Start Footer Section --*/
+#footer {
+  margin-top: 80px;
+  padding: 100px;
+  background-color: #efefef; }
+  #footer .footer-logo {
+    width: 30px;
+    margin: 25px 0 15px;
+    background-color: black;
+    border-radius: 50%; }
+  #footer h1 {
+    font-size: 15px;
+    text-align: left;
+    margin: 25px 0 25px; }
+  #footer p {
+    font-size: 12px;
+    text-align: left; }
+  #footer .city {
+    margin-left: 37px; }
+  #footer .svg-inline--fa {
+    margin-right: 20px;
+    font-size: 15px; }
+  #footer hr {
+    margin-top: 10px; }
+  #footer .fa-heart {
+    color: red;
+    font-size: 17px; }
+  #footer .copyright {
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px; }
+
+/*-- End Footer Section --*/
