@@ -233,3 +233,63 @@
   }
 }
 /*-- End Testemonials Section --*/
+
+/*-- Start Subscribe Section --*/
+.subscribe {
+  padding: 50px 20px;
+  background-color: #013f7e;
+  position: relative;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+
+  & h3,
+  & p {
+    color: #fff;
+  }
+
+  & .input-group {
+    border-radius: 30px;
+    background: #fff;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 5px;
+
+    & .form-control {
+      border: none;
+      background: transparent;
+      &:focus {
+        box-shadow: none;
+        background: transparent;
+      }
+    }
+
+    /*Start Subscribe button*/
+    &-append {
+      background-image: linear-gradient(to right, #1c03b5, #5c8bef);
+      border-radius: 30px;
+
+      & .btn:focus {
+        box-shadow: none;
+      }
+    }
+
+    &-text {
+      background: transparent;
+      border: none;
+      color: #fff;
+    }
+    /*End Subscribe button*/
+  }
+}
+
+/*-- End Subscribe Section --*/
+
+/*
+
+	.subscribe
+		.input-group
+		  .form-control
+					.input-group-append
+						.input-group-text
+
+
+*/
