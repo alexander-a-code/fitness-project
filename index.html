@@ -9,12 +9,13 @@
 	<link rel="stylesheet" href="css/fixed.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 </head>
 
 <body id="home"  data-spy="scroll" data-target="#navbarResponsive">
 	<!--* Start Header Section -->
 	<section id="header">
-		<nav class="navbar navbar-dark fixed-top">
+		<nav class="navbar navbar-dark bg-dark fixed-top">
 			<a href="index.html" class="navbar-brand"><img src="/img/logo/logo2.png" alt="logo" title="logo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<i class="fas fa-bars"></i>
@@ -22,11 +23,11 @@
 			<div class="collapse navbar-collapse ml-1" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
-					<li class="nav-item"><a href="#course" class="nav-link">ABOUT US</a></li>
-					<li class="nav-item"><a href="#portfolio" class="nav-link">SERVICES</a></li>
-					<li class="nav-item"><a href="#team" class="nav-link">FEATURES</a></li>
-					<li class="nav-item"><a href="#contact" class="nav-link">REVIEW</a></li>
-					<li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link">ABOUT US</a></li>
+					<li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
+					<li class="nav-item"><a href="#features" class="nav-link">FEATURES</a></li>
+					<li class="nav-item"><a href="#testemonials" class="nav-link">REVIEW</a></li>
+					<li class="nav-item"><a href="#footer" class="nav-link">CONTACT US</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -79,7 +80,7 @@
 	<!-- Start Welcome Text Section -->
 	<section id="welcome">
 		<div class="container">
-			<div class="welcome text-center">
+			<div class="welcome text-center wow slideInLeft">
 				<h1>Create Website with Animation</h1>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptate quisquam laborum? Enim a dicta sed quos laborum provident doloribus praesentium iusto culpa nostrum assumenda atque officiis maiores repellat beatae at, architecto omnis odit nulla optio expedita? Architecto, modi saepe?</p>
 				<button type="submit" class="btn home-btn">Subscribe</button>
@@ -121,17 +122,17 @@
 			<div class="row">
 				<div class="col-md-4 m-negative-1">
 					<img src="/img/sports/boxer.webp" alt="kick-boxer" class="img-fluid boxer">
-					<h4>Boxing</h4>
+					<h4>Бокс</h4>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, fugit nam, iure totam, ab reprehenderit dignissimos facilis impedit omnis tenetur adipisci architecto nesciunt incidunt repudiandae delectus a eum! Illo, voluptate.</p>
 				</div>
 				<div class="col-md-4">
 					<img src="/img/sports/gym.webp" alt="kick-boxer" class="img-fluid">
-					<h4>Gym</h4>
+					<h4>Фитнес</h4>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, fugit nam, iure totam, ab reprehenderit dignissimos facilis impedit omnis tenetur adipisci architecto nesciunt incidunt repudiandae delectus a eum! Illo, voluptate.</p>
 				</div>
 				<div class="col-md-4">
 					<img src="/img/sports/ninja.webp" alt="kick-boxer" class="img-fluid mt-1">
-					<h4>Mixed Martial Arts</h4>
+					<h4>Смесени Бойни Изкуства</h4>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, fugit nam, iure totam, ab reprehenderit dignissimos facilis impedit omnis tenetur adipisci architecto nesciunt incidunt repudiandae delectus a eum! Illo, voluptate.</p>
 				</div>
 			</div>
@@ -180,9 +181,59 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- End Features Section -->
 	
+	<!-- Start Testemonials Section -->
+	<section id="plans">
+		<div class="container">
+			<h1 class="text-center">Планове</h1>
+			<p class="text-center pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit libero dolorum<br> 
+			<div class="row">
+				<div class="col-md-3">
+					<div class="game">
+						<div class="rank">3</div>
+						<div class="front">
+							<img src="/img/plans/RachetClankRift-mb.jpg" alt="rach" class="thumbnail">
+							<h3 class="name">Game name</h3>
+							<div class="stats">
+								<p class="viewers">452k</p>
+								<div class="streamers">
+									<img src="/img/plans/users/user-1.jpg" alt="user">
+									<img src="/img/plans/users/user-2.jpg" alt="user">
+									<img src="/img/plans/users/user-3.jpg" alt="user">
+								</div>
+							</div>
+						</div>
+						<div class="front-background"></div>
+
+						<div class="back">
+							<div class="streaming-info">
+								<p class="game-stat">559k<span>Watching</span></p>
+								<p class="game-stat">25k<span>Streams</span></p>
+							</div>
+							<button type="submit" class="btn btn-dark">See more shit</button>
+							<div class="streamers">
+								<div class="streamer">
+									<p class="name">Gamer-1</p>
+									<p class="number">36.1k</p>
+								</div>
+								<div class="streamer">
+									<p class="name">Gamer-2</p>
+									<p class="number">36.1k</p>
+								</div>
+								<div class="streamer">
+									<p class="name">Gamer-3</p>
+									<p class="number">36.1k</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Testemonials Section -->
+
 	<!-- Start Testemonials Section -->
 	<section id="testemonials">
 		<div class="container">
@@ -336,6 +387,8 @@
 	<!-- Font Awesome -->
 	<script src="js/all.min.js"></script>
 
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
 	<!-- End Script Source Files -->
 
 	<script>
@@ -354,6 +407,6 @@
 			});
 		  }
 		});
-	  </script>
+	</script>
 </body>
 </html>
