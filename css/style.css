@@ -218,7 +218,7 @@
       z-index: 3; }
       #plans .game:hover .back .streaming-info {
         columns: 2;
-        padding: 1rem; }
+        margin: 1rem -2rem 1rem -1rem; }
 
 /*-- End Plans Section --*/
 /*-- Start Testemonials Section --*/
