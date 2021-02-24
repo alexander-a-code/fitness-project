@@ -6,6 +6,9 @@
   padding: 0;
 }
 
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+
 #header {
   background-image: url(/img/boxing/boxing-girl.jpg);
   height: 80vh;
@@ -178,12 +181,13 @@
 }
 /*-- End Features Section --*/
 
-/*-- Start Plans Section --*/
+/*-- Start TEST Section --*/
 #plans {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(230, 230, 230, 0.3);
   color: #013f7e;
+  margin-top: 45rem;
 
   h1,
   h2,
@@ -198,8 +202,10 @@
 
   .game {
     position: relative;
-    width: 10rem;
+    width: 13rem;
     color: #fff;
+    background: rgb(42, 42, 42);
+    cursor: pointer;
 
     & .rank {
       position: absolute;
@@ -226,18 +232,57 @@
 
       .name {
         margin: 0.75rem 0;
+        margin-bottom: 3rem;
       }
 
       .stats {
         display: flex;
-        border: 1px solid red;
         justify-content: space-between;
         align-items: center;
       }
     }
 
+    .back {
+      opacity: 0;
+      position: absolute;
+      // bottom: 0;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .streaming-info {
+        columns: 2;
+        column-rule: 1px solid rgba(0, 0, 0, 0.25);
+      }
+
+      .game-stat {
+        font-size: 1.1125rem;
+        text-align: center;
+
+        span {
+          font-size: 0.85rem;
+          display: block;
+        }
+      }
+
+      & .btn {
+        border: 0;
+        background: rgb(89, 0, 255);
+        border-radius: 100vw;
+        color: #fff;
+        padding: 0.5em 1.5em;
+        font-weight: bold;
+      }
+    }
+
     .streamers {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       & img {
         width: 2rem;
@@ -257,7 +302,7 @@
     }
 
     & .front-background {
-      background-color: #234;
+      background-color: rgb(40, 46, 54);
       position: absolute;
       top: 0;
       bottom: 0;
@@ -267,14 +312,6 @@
       border-radius: 12px;
       z-index: 1;
       opacity: 0;
-    }
-
-    .back {
-      opacity: 0;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
     }
 
     &:hover {
@@ -291,6 +328,23 @@
 
         .stats {
           opacity: 0;
+        }
+      }
+
+      .back {
+        opacity: 1;
+        z-index: 3;
+
+        .streamers {
+          width: 100%;
+        }
+
+        .streamer {
+          font-size: 0.9rem;
+        }
+
+        .name {
+          font-weight: bold;
         }
       }
 
@@ -321,21 +375,91 @@
           transform: scale(0.8);
         }
       }
+    }
+  }
+}
+/*-- End TEST Section --*/
 
-      .back {
+//!-- Start Authors Section --/
+
+.card {
+  background-color: rgb(24, 23, 23);
+  color: #fff;
+  cursor: pointer;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+    transition: 250ms;
+    border-radius: 12px;
+  }
+
+  &-front {
+    transition: 250ms;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-background {
+    background-color: black;
+    position: absolute;
+    top: 3.3rem;
+    bottom: 3.3rem;
+    left: 0;
+    right: 0;
+    transform: scale(0.2, 1.2);
+    border-radius: 12px;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &:hover {
+    .card-front {
+      transform: translateY(-25%) scale(0.8);
+
+      .card-title {
+        animation: cardName 250ms forwards;
+      }
+    }
+
+    .card-background {
+      transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1),
+        opacity 100ms linear;
+      opacity: 1;
+      transform: scale(1.4, 1.2);
+      // opacity: 0.5;
+      // background-color: red;
+      //!да доизкусуря излизането че се вижда предната карта докато излиза бекраунда
+    }
+
+    @keyframes cardName {
+      0% {
+        text-align-last: left;
         opacity: 1;
-        z-index: 3;
-
-        .streaming-info {
-          columns: 2;
-          margin: 1rem -2rem 1rem -1rem;
-        }
+      }
+      20% {
+        text-align-last: left;
+        opacity: 0;
+      }
+      60% {
+        text-align: center;
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        text-align: center;
+        opacity: 1;
+        transform: scale(0.8);
       }
     }
   }
 }
 
-/*-- End Plans Section --*/
+//!--End Authors Card Section--*/
 
 /*-- Start Testemonials Section --*/
 #testemonials {

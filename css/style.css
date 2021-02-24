@@ -115,12 +115,13 @@
         text-align: left; }
 
 /*-- End Features Section --*/
-/*-- Start Plans Section --*/
+/*-- Start TEST Section --*/
 #plans {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #013f7e; }
+  background-color: rgba(230, 230, 230, 0.3);
+  color: #013f7e;
+  margin-top: 45rem; }
   #plans h1,
   #plans h2,
   #plans h3,
@@ -130,8 +131,10 @@
     max-width: 100%; }
   #plans .game {
     position: relative;
-    width: 10rem;
-    color: #fff; }
+    width: 13rem;
+    color: #fff;
+    background: #2a2a2a;
+    cursor: pointer; }
     #plans .game .rank {
       position: absolute;
       top: 0;
@@ -151,14 +154,42 @@
         border: 1px solid black;
         border-radius: 12px; }
       #plans .game .front .name {
-        margin: 0.75rem 0; }
+        margin: 0.75rem 0;
+        margin-bottom: 3rem; }
       #plans .game .front .stats {
         display: flex;
-        border: 1px solid red;
         justify-content: space-between;
         align-items: center; }
+    #plans .game .back {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; }
+      #plans .game .back .streaming-info {
+        columns: 2;
+        column-rule: 1px solid rgba(0, 0, 0, 0.25); }
+      #plans .game .back .game-stat {
+        font-size: 1.1125rem;
+        text-align: center; }
+        #plans .game .back .game-stat span {
+          font-size: 0.85rem;
+          display: block; }
+      #plans .game .back .btn {
+        border: 0;
+        background: #5900ff;
+        border-radius: 100vw;
+        color: #fff;
+        padding: 0.5em 1.5em;
+        font-weight: bold; }
     #plans .game .streamers {
-      display: flex; }
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
       #plans .game .streamers img {
         width: 2rem;
         height: 2rem;
@@ -170,7 +201,7 @@
         #plans .game .streamers img:nth-of-type(2) {
           transform: translateX(25%); }
     #plans .game .front-background {
-      background-color: #234;
+      background-color: #282e36;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -180,12 +211,6 @@
       border-radius: 12px;
       z-index: 1;
       opacity: 0; }
-    #plans .game .back {
-      opacity: 0;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0; }
     #plans .game:hover .rank {
       transform: translate(150%, -75%); }
     #plans .game:hover .front {
@@ -194,6 +219,15 @@
         animation: gameName 250ms forwards; }
       #plans .game:hover .front .stats {
         opacity: 0; }
+    #plans .game:hover .back {
+      opacity: 1;
+      z-index: 3; }
+      #plans .game:hover .back .streamers {
+        width: 100%; }
+      #plans .game:hover .back .streamer {
+        font-size: 0.9rem; }
+      #plans .game:hover .back .name {
+        font-weight: bold; }
     #plans .game:hover .front-background {
       transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity 100ms linear;
       opacity: 1;
@@ -213,14 +247,58 @@
     text-align: center;
     opacity: 1;
     transform: scale(0.8); } }
-    #plans .game:hover .back {
-      opacity: 1;
-      z-index: 3; }
-      #plans .game:hover .back .streaming-info {
-        columns: 2;
-        margin: 1rem -2rem 1rem -1rem; }
-
-/*-- End Plans Section --*/
+/*-- End TEST Section --*/
+.card {
+  background-color: #181717;
+  color: #fff;
+  cursor: pointer;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important; }
+  .card img {
+    max-width: 100%;
+    vertical-align: middle;
+    transition: 250ms;
+    border-radius: 12px; }
+  .card-front {
+    transition: 250ms;
+    position: relative;
+    z-index: 2; }
+  .card-background {
+    background-color: black;
+    position: absolute;
+    top: 3.3rem;
+    bottom: 3.3rem;
+    left: 0;
+    right: 0;
+    transform: scale(0.2, 1.2);
+    border-radius: 12px;
+    z-index: 1;
+    opacity: 0; }
+  .card:hover .card-front {
+    transform: translateY(-25%) scale(0.8); }
+    .card:hover .card-front .card-title {
+      animation: cardName 250ms forwards; }
+  .card:hover .card-background {
+    transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity 100ms linear;
+    opacity: 1;
+    transform: scale(1.4, 1.2); }
+@keyframes cardName {
+  0% {
+    text-align-last: left;
+    opacity: 1; }
+  20% {
+    text-align-last: left;
+    opacity: 0; }
+  60% {
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.5); }
+  100% {
+    text-align: center;
+    opacity: 1;
+    transform: scale(0.8); } }
 /*-- Start Testemonials Section --*/
 #testemonials {
   padding: 100px 0 100px; }
