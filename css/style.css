@@ -65,9 +65,10 @@
 /*-- End About us Section --*/
 /*-- Start Services Section --*/
 #services {
-  background-color: #efefef;
+  background-color: #fff;
   padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
   #services .col-md-4 {
     padding: 20px; }
     #services .col-md-4 .basi {
@@ -86,11 +87,12 @@
 /*-- Start Features Section --*/
 #features {
   padding: 100px 0 100px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/sports/deadlift-powerlifter.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/sports/dubmbells.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: #fff; }
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; }
   #features .col-md-6 {
     padding: 20px; }
     #features .col-md-6 .features-box {
@@ -115,193 +117,21 @@
         text-align: left; }
 
 /*-- End Features Section --*/
-/*-- Start TEST Section --*/
-#plans {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: rgba(230, 230, 230, 0.3);
-  color: #013f7e;
-  margin-top: 45rem; }
-  #plans h1,
-  #plans h2,
-  #plans h3,
-  #plans p {
-    margin: 0; }
-  #plans img {
-    max-width: 100%; }
-  #plans .game {
-    position: relative;
-    width: 13rem;
-    color: #fff;
-    background: #2a2a2a;
-    cursor: pointer; }
-    #plans .game .rank {
-      position: absolute;
-      top: 0;
-      right: 0.7rem;
-      font-size: 75%;
-      font-weight: bold;
-      background: rgba(0, 0, 0, 0.65);
-      padding: 0.5em 0.5em 0.75em;
-      clip-path: polygon(100% 1%, 100% 100%, 50% 80%, 0% 100%, 0 53%, 0% 0%);
-      z-index: 1000;
-      transition: transform 250ms ease-in-out; }
-    #plans .game .front {
-      transition: 250ms;
-      position: relative;
-      z-index: 2; }
-      #plans .game .front .thumbnail {
-        border: 1px solid black;
-        border-radius: 12px; }
-      #plans .game .front .name {
-        margin: 0.75rem 0;
-        margin-bottom: 3rem; }
-      #plans .game .front .stats {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-    #plans .game .back {
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem; }
-      #plans .game .back .streaming-info {
-        columns: 2;
-        column-rule: 1px solid rgba(0, 0, 0, 0.25); }
-      #plans .game .back .game-stat {
-        font-size: 1.1125rem;
-        text-align: center; }
-        #plans .game .back .game-stat span {
-          font-size: 0.85rem;
-          display: block; }
-      #plans .game .back .btn {
-        border: 0;
-        background: #5900ff;
-        border-radius: 100vw;
-        color: #fff;
-        padding: 0.5em 1.5em;
-        font-weight: bold; }
-    #plans .game .streamers {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      #plans .game .streamers img {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        border: 1px solid black; }
-        #plans .game .streamers img:nth-of-type(1) {
-          transform: translateX(50%);
-          z-index: 1; }
-        #plans .game .streamers img:nth-of-type(2) {
-          transform: translateX(25%); }
-    #plans .game .front-background {
-      background-color: #282e36;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transform: scale(0.2, 0.9);
-      border-radius: 12px;
-      z-index: 1;
-      opacity: 0; }
-    #plans .game:hover .rank {
-      transform: translate(150%, -75%); }
-    #plans .game:hover .front {
-      transform: translateY(-30%) scale(0.8); }
-      #plans .game:hover .front .name {
-        animation: gameName 250ms forwards; }
-      #plans .game:hover .front .stats {
-        opacity: 0; }
-    #plans .game:hover .back {
-      opacity: 1;
-      z-index: 3; }
-      #plans .game:hover .back .streamers {
-        width: 100%; }
-      #plans .game:hover .back .streamer {
-        font-size: 0.9rem; }
-      #plans .game:hover .back .name {
-        font-weight: bold; }
-    #plans .game:hover .front-background {
-      transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity 100ms linear;
-      opacity: 1;
-      transform: scale(1.4, 1.2); }
-@keyframes gameName {
-  0% {
-    text-align-last: left;
-    opacity: 1; }
-  20% {
-    text-align-last: left;
-    opacity: 0; }
-  60% {
-    text-align: center;
-    opacity: 0;
-    transform: scale(0.5); }
-  100% {
-    text-align: center;
-    opacity: 1;
-    transform: scale(0.8); } }
-/*-- End TEST Section --*/
-.card {
-  background-color: #181717;
-  color: #fff;
-  cursor: pointer;
-  border-top-left-radius: 12px !important;
-  border-top-right-radius: 12px !important;
-  border-bottom-left-radius: 12px !important;
-  border-bottom-right-radius: 12px !important; }
-  .card img {
-    max-width: 100%;
-    vertical-align: middle;
-    transition: 250ms;
-    border-radius: 12px; }
-  .card-front {
-    transition: 250ms;
-    position: relative;
-    z-index: 2; }
-  .card-background {
-    background-color: black;
-    position: absolute;
-    top: 3.3rem;
-    bottom: 3.3rem;
-    left: 0;
-    right: 0;
-    transform: scale(0.2, 1.2);
-    border-radius: 12px;
-    z-index: 1;
-    opacity: 0; }
-  .card:hover .card-front {
-    transform: translateY(-25%) scale(0.8); }
-    .card:hover .card-front .card-title {
-      animation: cardName 250ms forwards; }
-  .card:hover .card-background {
-    transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity 100ms linear;
-    opacity: 1;
-    transform: scale(1.4, 1.2); }
-@keyframes cardName {
-  0% {
-    text-align-last: left;
-    opacity: 1; }
-  20% {
-    text-align-last: left;
-    opacity: 0; }
-  60% {
-    text-align: center;
-    opacity: 0;
-    transform: scale(0.5); }
-  100% {
-    text-align: center;
-    opacity: 1;
-    transform: scale(0.8); } }
 /*-- Start Testemonials Section --*/
 #testemonials {
-  padding: 100px 0 100px; }
+  position: relative;
+  padding: 15rem 0 15rem; }
+  #testemonials .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    overflow: hidden; }
+    #testemonials .bg-video__content {
+      height: 100%;
+      object-fit: cover; }
   #testemonials .col-md-4 {
     padding: 10px 30px; }
     #testemonials .col-md-4 img {
@@ -317,7 +147,7 @@
       padding: 10px 10px 10px 30px;
       border-radius: 10px;
       box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2); }
-      #testemonials .col-md-4 .review .svg-inline--fa {
+      #testemonials .col-md-4 .review .fa-twitter {
         color: #013f7e;
         font-weight: 700;
         font-size: 18px;
@@ -333,13 +163,83 @@
     padding-bottom: 30px; }
 
 /*-- End Testemonials Section --*/
+/*-- Start Product Section --*/
+#products {
+  padding: 10rem 8rem 15rem 8rem;
+  background-color: #fff; }
+  #products .info-header {
+    width: 50%;
+    margin: auto; }
+  #products h1 {
+    color: #013f7e !important; }
+  #products .flip-box {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-top: 25px;
+    color: white; }
+    #products .flip-box-front, #products .flip-box-back {
+      background-image: url("/img/products&promo/violet-coffee.png");
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      min-height: 475px;
+      transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      backface-visibility: hidden; }
+    #products .flip-box-front {
+      transform: rotateY(0deg);
+      transform-style: preserve-3d; }
+    #products .flip-box:hover .flip-box-front {
+      transform: rotateY(-180deg);
+      transform-style: preserve-3d; }
+    #products .flip-box-back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d; }
+    #products .flip-box:hover .flip-box-back {
+      transform: rotateY(0deg);
+      transform-style: preserve-3d; }
+    #products .flip-box .inner {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 60px;
+      outline: 1px solid transparent;
+      perspective: inherit;
+      z-index: 2;
+      transform: translateY(-50%) translateZ(60px) scale(0.94);
+      top: 50%; }
+    #products .flip-box-header {
+      font-size: 30px; }
+    #products .flip-box-img {
+      margin-top: 25px; }
+    #products .flip-box p {
+      font-size: 20px;
+      line-height: 1.5rem; }
+    #products .flip-box-button {
+      background-color: transparent;
+      border: solid 2px #fff;
+      border-radius: 2px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 25px;
+      padding: 15px 20px;
+      text-transform: uppercase; }
+
+/*-- End Product Section --*/
 /*-- Start Subscribe Section --*/
 .subscribe {
   padding: 50px 20px;
   background-color: #013f7e;
   position: relative;
   box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
-  margin-bottom: -160px; }
+  margin-bottom: -160px;
+  border-radius: 5px; }
   .subscribe h3, .subscribe p {
     color: #fff; }
   .subscribe .input-group {
@@ -400,3 +300,202 @@
     font-size: 15px; }
 
 /*-- End Footer Section --*/
+/*-- FLIPPY SHIT CARD --*/
+/*
+#plans {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgba(230, 230, 230, 0.3);
+  color: #013f7e;
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .game {
+    position: relative;
+
+    color: #fff;
+    background: rgb(42, 42, 42);
+    cursor: pointer;
+
+    & .rank {
+      position: absolute;
+      top: 0;
+      right: 0.7rem;
+      font-size: 75%;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 0.5em 0.5em 0.75em;
+      clip-path: polygon(100% 1%, 100% 100%, 50% 80%, 0% 100%, 0 53%, 0% 0%);
+      z-index: 1000;
+      transition: transform 250ms ease-in-out;
+    }
+
+    .front {
+      transition: 250ms;
+      position: relative;
+      z-index: 2;
+
+      & .thumbnail {
+        border: 1px solid black;
+        border-radius: 12px;
+      }
+
+      .name {
+        margin: 0.75rem 0;
+        margin-bottom: 3rem;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .back {
+      opacity: 0;
+      position: absolute;
+      // bottom: 0;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .streaming-info {
+        columns: 2;
+        column-rule: 1px solid rgba(0, 0, 0, 0.25);
+      }
+
+      .game-stat {
+        font-size: 1.1125rem;
+        text-align: center;
+
+        span {
+          font-size: 0.85rem;
+          display: block;
+        }
+      }
+
+      & .btn {
+        border: 0;
+        background: rgb(89, 0, 255);
+        border-radius: 100vw;
+        color: #fff;
+        padding: 0.5em 1.5em;
+        font-weight: bold;
+      }
+    }
+
+    .streamers {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 1px solid black;
+
+        &:nth-of-type(1) {
+          transform: translateX(50%);
+          z-index: 1;
+        }
+
+        &:nth-of-type(2) {
+          transform: translateX(25%);
+        }
+      }
+    }
+
+    & .front-background {
+      background-color: rgb(40, 46, 54);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: scale(0.2, 0.9);
+      border-radius: 12px;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    &:hover {
+      .rank {
+        transform: translate(150%, -75%);
+      }
+
+      .front {
+        transform: translateY(-30%) scale(0.8);
+
+        .name {
+          animation: gameName 250ms forwards;
+        }
+
+        .stats {
+          opacity: 0;
+        }
+      }
+
+      .back {
+        opacity: 1;
+        z-index: 3;
+
+        .streamers {
+          width: 100%;
+        }
+
+        .streamer {
+          font-size: 0.9rem;
+        }
+
+        .name {
+          font-weight: bold;
+        }
+      }
+
+      .front-background {
+        transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1),
+          opacity 100ms linear;
+        opacity: 1;
+        transform: scale(1.4, 1.2);
+      }
+
+      @keyframes gameName {
+        0% {
+          text-align-last: left;
+          opacity: 1;
+        }
+        20% {
+          text-align-last: left;
+          opacity: 0;
+        }
+        60% {
+          text-align: center;
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        100% {
+          text-align: center;
+          opacity: 1;
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+*/
+/*--FLIPPY SHIT CARD END--*/
