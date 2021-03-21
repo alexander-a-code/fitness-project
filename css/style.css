@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -121,7 +120,7 @@
 /*-- Start Testemonials Section --*/
 #testemonials {
   position: relative;
-  padding: 15rem 0 15rem; }
+  padding: 20rem 0; }
   #testemonials .bg-video {
     position: absolute;
     top: 0;
@@ -162,17 +161,28 @@
     color: #013f7e; }
   #testemonials p {
     padding-bottom: 30px; }
+  @media screen and (max-width: 1600px) {
+    #testemonials {
+      padding: 20rem 0; } }
+  @media screen and (max-width: 960px) {
+    #testemonials {
+      padding: 5rem 0; } }
+  @media screen and (max-width: 540px) {
+    #testemonials {
+      padding: 5rem 0 5rem; } }
 
 /*-- End Testemonials Section --*/
 /*-- Start Product Section --*/
 #products {
-  padding: 10rem 8rem 15rem 8rem;
-  background-color: #fff; }
+  padding: 10rem 13rem 15rem 13rem;
+  background: #eeeeee;
+  background: radial-gradient(circle, #eeeeee 0%, white 50%, #333333 100%); }
   #products .info-header {
     width: 50%;
     margin: auto; }
   #products h1 {
-    color: #013f7e !important; }
+    color: #013f7e !important;
+    font-size: 2.4rem; }
   #products .flip-box {
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -180,7 +190,7 @@
     margin-top: 25px;
     color: white; }
     #products .flip-box-front, #products .flip-box-back {
-      background-image: url("/img/products&promo/violet-coffee.png");
+      background-image: url("/img/gym-gallery/10.jpg"), linear-gradient(to right top, #000000, #161616, #242424, #343434, #444444, #565656, #696969, #7d7d7d, #989898, #b5b5b5, #d2d2d2, #f0f0f0);
       background-size: cover;
       background-position: center;
       border-radius: 8px;
@@ -231,168 +241,118 @@
       margin-top: 25px;
       padding: 15px 20px;
       text-transform: uppercase; }
+  @media screen and (max-width: 1600px) {
+    #products {
+      padding: 10rem 2rem 15rem 2rem; } }
+  @media screen and (max-width: 1140px) {
+    #products {
+      padding: 10rem 7rem; }
+      #products h1 {
+        font-size: 1.4rem;
+        font-weight: 600; }
+      #products p {
+        font-size: 1rem;
+        font-weight: 400; } }
+  @media screen and (max-width: 960px) {
+    #products {
+      padding: 10rem 5rem 15rem 5rem; } }
+  @media screen and (max-width: 760px) {
+    #products {
+      padding: 10rem 8rem 15rem 8rem; } }
+  @media screen and (max-width: 540px) {
+    #products {
+      padding: 10rem 3rem 15rem 3rem; } }
 
 /*-- End Product Section --*/
 /*-- Start Gallery Section --*/
-/*
 #gym {
-  position: relative;
-  height: 100%;
-  width: 100%;
-
-  & h1 {
+  background: #747474;
+  background: linear-gradient(0deg, #747474 0%, #dad8d8 100%);
+  border-top: 1px solid black; }
+  #gym h1 {
     position: relative;
     height: auto;
-    width: 550px;
+    width: 20%;
     left: 50%;
     transform: translateX(-50%);
-    margin: 5% 0 2% 0;
     text-align: center;
     font-size: 2.8rem;
     font-weight: 500;
     letter-spacing: 1.5px;
-    color: #013f7e;
-    border-left: 5px solid #017bf5;
-    border-right: 5px solid #017bf5;
-    background: rgba(0, 0, 0, 0.05);
-  }
-
-  & p {
+    padding: 3rem 0 1rem;
+    color: #fff;
+    border-bottom: 1px solid #013f7e; }
+  #gym p {
     position: relative;
-    height: auto;
     width: 100%;
     text-align: center;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
-    color: #777;
-  }
-
-  .gallery {
+    color: #fff;
+    padding: 0 !important; }
+  #gym .grid-wrap {
+    width: 100%;
+    height: auto;
+    columns: 5;
+    column-gap: 4px; }
+  #gym .grid-box {
+    width: 100%;
+    height: auto;
     position: relative;
-    height: auto; // тука мамата си е балу остатищ ауто и grid-auto-flow: dense; вече въобще не баца
-    width: 90%;
-    margin: auto;
-    padding: 45px 0;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    grid-auto-flow: dense;
-
-    & img {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      object-fit: cover;
-    }
-
-    & .img:first-child {
-      grid-column-start: span 1;
-      grid-row-end: span 1;
-    }
-
-    & .img:nth-child(2n + 3) {
-      grid-row-start: span 1;
-    }
-
-    & .img:nth-child(4n + 5) {
-      grid-column-start: span 2;
-      grid-row-start: span 2;
-    }
-
-    & .img:nth-child(6n + 7) {
-      grid-row-start: span 1;
-    }
-
-    & .img:nth-child(8n + 9) {
-      grid-column-start: span 1;
-      grid-row-start: span 1;
-    }
-  }
-}
-*/
-#gym h1 {
-  position: relative;
-  height: auto;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 5% 0 1% 0;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  color: #013f7e;
-  padding: 0.5rem;
-  border: 1px solid #017bf5; }
-#gym p {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  color: black; }
-#gym .grid-wrap {
-  width: 100%;
-  height: auto;
-  columns: 5;
-  column-gap: 4px; }
-#gym .grid-box {
-  width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 5px;
-  cursor: pointer; }
-#gym .grid-box img {
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease-in-out;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
-  border-radius: 2px;
-  filter: grayscale(0.5) brightness(0.5); }
-#gym .grid-box:before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  content: '';
-  background: linear-gradient(255, 255, 255, 0) 40%, #000 120%;
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  z-index: 9; }
-#gym .grid-box:hover:before {
-  transition: 0.5s;
-  opacity: 1; }
-#gym .grid-box:hover img {
-  transition: 0.5s;
-  transform: scale(1.1);
-  filter: grayscale(0) brightness(1); }
-@media screen and (max-width: 1200px) {
-  #gym h1 {
-    font-size: 2.2rem; }
-  #gym .grid-wrap {
-    columns: 4;
-    column-gap: 4px; } }
-@media screen and (max-width: 768px) {
-  #gym h1 {
-    font-size: 1.8rem; }
-  #gym .grid-wrap {
-    columns: 3;
-    column-gap: 4px; } }
-@media screen and (max-width: 540px) {
-  #gym h1 {
-    font-size: 1.5rem; }
-  #gym .grid-wrap {
-    columns: 2;
-    column-gap: 4px; } }
-@media screen and (max-width: 460px) {
-  #gym h1 {
-    font-size: 1.2rem; }
-  #gym .grid-wrap {
-    columns: 1;
-    column-gap: 4px; } }
+    overflow: hidden;
+    margin-bottom: 5px;
+    cursor: pointer; }
+  #gym .grid-box img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+    filter: grayscale(0.5) brightness(0.5); }
+  #gym .grid-box:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: linear-gradient(255, 255, 255, 0) 40%, #000 120%;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 9; }
+  #gym .grid-box:hover:before {
+    transition: 0.5s;
+    opacity: 1; }
+  #gym .grid-box:hover img {
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: grayscale(0) brightness(1); }
+  @media screen and (max-width: 1200px) {
+    #gym h1 {
+      font-size: 2.2rem; }
+    #gym .grid-wrap {
+      columns: 4;
+      column-gap: 4px; } }
+  @media screen and (max-width: 768px) {
+    #gym h1 {
+      font-size: 1.8rem; }
+    #gym .grid-wrap {
+      columns: 3;
+      column-gap: 4px; } }
+  @media screen and (max-width: 540px) {
+    #gym h1 {
+      font-size: 1.5rem;
+      width: 40%; }
+    #gym p {
+      font-size: 1.1rem; }
+    #gym .grid-wrap {
+      columns: 2;
+      column-gap: 4px; } }
+  @media screen and (max-width: 460px) {
+    #gym h1 {
+      font-size: 1.2rem; }
+    #gym .grid-wrap {
+      columns: 1;
+      column-gap: 4px; } }
 
 /*-- End Gallery Section --*/
 /*-- Start Subscribe Section --*/
@@ -463,202 +423,3 @@
     font-size: 15px; }
 
 /*-- End Footer Section --*/
-/*-- FLIPPY SHIT CARD --*/
-/*
-#plans {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: rgba(230, 230, 230, 0.3);
-  color: #013f7e;
-
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .game {
-    position: relative;
-
-    color: #fff;
-    background: rgb(42, 42, 42);
-    cursor: pointer;
-
-    & .rank {
-      position: absolute;
-      top: 0;
-      right: 0.7rem;
-      font-size: 75%;
-      font-weight: bold;
-      background: rgba(0, 0, 0, 0.65);
-      padding: 0.5em 0.5em 0.75em;
-      clip-path: polygon(100% 1%, 100% 100%, 50% 80%, 0% 100%, 0 53%, 0% 0%);
-      z-index: 1000;
-      transition: transform 250ms ease-in-out;
-    }
-
-    .front {
-      transition: 250ms;
-      position: relative;
-      z-index: 2;
-
-      & .thumbnail {
-        border: 1px solid black;
-        border-radius: 12px;
-      }
-
-      .name {
-        margin: 0.75rem 0;
-        margin-bottom: 3rem;
-      }
-
-      .stats {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-
-    .back {
-      opacity: 0;
-      position: absolute;
-      // bottom: 0;
-      top: 50%;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-
-      .streaming-info {
-        columns: 2;
-        column-rule: 1px solid rgba(0, 0, 0, 0.25);
-      }
-
-      .game-stat {
-        font-size: 1.1125rem;
-        text-align: center;
-
-        span {
-          font-size: 0.85rem;
-          display: block;
-        }
-      }
-
-      & .btn {
-        border: 0;
-        background: rgb(89, 0, 255);
-        border-radius: 100vw;
-        color: #fff;
-        padding: 0.5em 1.5em;
-        font-weight: bold;
-      }
-    }
-
-    .streamers {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      & img {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        border: 1px solid black;
-
-        &:nth-of-type(1) {
-          transform: translateX(50%);
-          z-index: 1;
-        }
-
-        &:nth-of-type(2) {
-          transform: translateX(25%);
-        }
-      }
-    }
-
-    & .front-background {
-      background-color: rgb(40, 46, 54);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transform: scale(0.2, 0.9);
-      border-radius: 12px;
-      z-index: 1;
-      opacity: 0;
-    }
-
-    &:hover {
-      .rank {
-        transform: translate(150%, -75%);
-      }
-
-      .front {
-        transform: translateY(-30%) scale(0.8);
-
-        .name {
-          animation: gameName 250ms forwards;
-        }
-
-        .stats {
-          opacity: 0;
-        }
-      }
-
-      .back {
-        opacity: 1;
-        z-index: 3;
-
-        .streamers {
-          width: 100%;
-        }
-
-        .streamer {
-          font-size: 0.9rem;
-        }
-
-        .name {
-          font-weight: bold;
-        }
-      }
-
-      .front-background {
-        transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1),
-          opacity 100ms linear;
-        opacity: 1;
-        transform: scale(1.4, 1.2);
-      }
-
-      @keyframes gameName {
-        0% {
-          text-align-last: left;
-          opacity: 1;
-        }
-        20% {
-          text-align-last: left;
-          opacity: 0;
-        }
-        60% {
-          text-align: center;
-          opacity: 0;
-          transform: scale(0.5);
-        }
-        100% {
-          text-align: center;
-          opacity: 1;
-          transform: scale(0.8);
-        }
-      }
-    }
-  }
-}
-*/
-/*--FLIPPY SHIT CARD END--*/

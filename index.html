@@ -225,21 +225,21 @@
 				consequuntur unde, quaerat placeat dolor inventore similique laborum.
 
 			<div class="row">
-				<div class="col-md-4 mt-5">
+				<div class="col-xs-3 px-4 col-md-4 col-sm-12 pl-5 col-lg p-0">
 					<p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit libero dolorum
 						consequuntur unde, quaerat placeat dolor inventore similique laborum.
 						<br><i class="fab fa-twitter"></i><span>@username</span>
 					</p>
 					<img src="/img//social-user-img/user-1.jpg" alt="user">
 				</div>
-				<div class="col-md-4 mid-user mt-3">
+				<div class="col-xs-3 px-4 col-md-4 col-sm-12 pl-5 col-lg p-0">
 					<p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit libero dolorum
 						consequuntur unde, quaerat placeat dolor inventore similique laborum.
 						<br><i class="fab fa-twitter"></i><span>@username</span>
 					</p>
 					<img src="/img/social-user-img/user-2.jpg" alt="user">
 				</div>
-				<div class="col-md-4 mt-5">
+				<div class="col-xs-3 px-4 col-md-4 col-sm-12 pl-5 col-lg p-0">
 					<p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit libero dolorum
 						consequuntur unde, quaerat placeat dolor inventore similique laborum.
 						<br><i class="fab fa-twitter"></i><span>@username</span>
@@ -263,7 +263,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="box-item col-md-3 px-3">
+				<div class="box-item px-3 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="flip-box">
 						<div class="flip-box-front text-center">
 							<div class="inner color-white">
@@ -282,7 +282,7 @@
 					</div>
 				</div>
 
-				<div class="box-item col-md-3 px-3">
+				<div class="box-item px-3 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="flip-box">
 						<div class="flip-box-front text-center">
 							<div class="inner color-white">
@@ -301,7 +301,7 @@
 					</div>
 				</div>
 
-				<div class="box-item col-md-3 px-3">
+				<div class="box-item px-3 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="flip-box">
 						<div class="flip-box-front text-center">
 							<div class="inner color-white">
@@ -320,7 +320,7 @@
 					</div>
 				</div>
 
-				<div class="box-item col-md-3 px-3">
+				<div class="box-item px-3 col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
 					<div class="flip-box">
 						<div class="flip-box-front text-center">
 							<div class="inner color-white">
@@ -367,7 +367,7 @@
 	
 		<div class="grid-wrap pt-4">
 			<div class="grid-box">
-				<img src="/img/gym-gallery/1.jpg" alt="">
+				<a data-fancybox="gallery" href="/img/gym-gallery/1.jpg"><img src="img/gym-gallery/1.jpg"></a>
 			</div>
 			<div class="grid-box">
 				<img src="/img/gym-gallery/2.jpg" alt="">
@@ -562,9 +562,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"
 		integrity="sha512-jNDtFf7qgU0eH/+Z42FG4fw3w7DM/9zbgNPe3wfJlCylVDTT3IgKW5r92Vy9IHa6U50vyMz5gRByIu4YIXFtaQ=="
 		crossorigin="anonymous"></script>
-
+	<!--wow js reveal animations on scroll-->
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>
+	<!--Fancybox for gallery-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	
 	<!-- End Script Source Files -->
 
 	<script>
@@ -589,56 +595,3 @@
 </html>
 
 
-<!-- Start TEST Section 
-		<section id="plans">
-			<div class="container">
-				<h1 class="text-center">Планове</h1>
-				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit libero dolorum<br> 
-				<div class="row">
-					<div class="col-md-3">
-						<div class="game">
-							<div class="rank">3</div>
-							<div class="front">
-								<img src="/img/plans/RachetClankRift-mb.jpg" alt="rach" class="thumbnail">
-								<h3 class="name">Game name</h3>
-								<div class="stats">
-									<p class="viewers">452k</p>
-									<div class="streamers">
-										<img src="/img/plans/users/user-1.jpg" alt="user">
-										<img src="/img/plans/users/user-2.jpg" alt="user">
-										<img src="/img/plans/users/user-3.jpg" alt="user">
-									</div>
-								</div>
-							</div>
-							<div class="front-background"></div>
-	
-							<div class="back">
-								<div class="streaming-info">
-									<p class="game-stat">559k<span>Watching</span></p>
-									<p class="game-stat">25k<span>Streams</span></p>
-								</div>
-								<button type="submit" class="btn btn">See more shit</button>
-								<div class="streamers">
-									<div class="streamer">
-										<div class="icon"><img src="/img/social-user-img/user-1.jpg" alt=""></div>
-										<p class="name">Gamer-1</p>
-										<p class="number">36.1k</p>
-									</div>
-									<div class="streamer">
-										<div class="icon"><img src="/img/social-user-img/user-2.jpg" alt=""></div>
-										<p class="name">Gamer-2</p>
-										<p class="number">36.1k</p>
-									</div>
-									<div class="streamer">
-										<div class="icon"><img src="/img/social-user-img/user-3.jpg" alt=""></div>
-										<p class="name">Gamer-3</p>
-										<p class="number">36.1k</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		End TEST Section  -->

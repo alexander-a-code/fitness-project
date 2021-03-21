@@ -186,17 +186,18 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 /*-- Start Testemonials Section --*/
 #testemonials {
   position: relative;
-  padding: 15rem 0 15rem;
+  padding: 20rem 0;
 
   .bg-video {
     position: absolute;
     top: 0;
     left: 0;
-    // height: 100%; // * 100% of the parent which is the section
+    // height: 100%;
     width: 100%;
     z-index: -1;
     opacity: 0.7;
-    overflow: hidden; //! Ехх нещо не го разбрах що треше да се позлва тук каза каза ,че видеото overflow-вало и че тая опция е много ГУТ за тия работи пишеме въпреки ,че на мен ми изглеждаше добре
+    overflow: hidden;
+    // overflow: hidden; //! Ехх нещо не го разбрах що треше да се позлва тук каза каза ,че видеото overflow-вало и че тая опция е много ГУТ за тия работи пишеме въпреки ,че на мен ми изглеждаше добре
 
     &__content {
       height: 100%;
@@ -248,13 +249,37 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
   & p {
     padding-bottom: 30px;
   }
+
+  @media screen and (max-width: 1600px) {
+    padding: 20rem 0;
+  }
+
+  @media screen and (max-width: 1140px) {
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 5rem 0;
+  }
+
+  @media screen and (max-width: 760px) {
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 5rem 0 5rem;
+  }
 }
 /*-- End Testemonials Section --*/
 
 /*-- Start Product Section --*/
 #products {
-  padding: 10rem 8rem 15rem 8rem;
-  background-color: #fff;
+  padding: 10rem 13rem 15rem 13rem;
+  background: rgb(238, 238, 238);
+  background: radial-gradient(
+    circle,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(51, 51, 51, 1) 100%
+  );
 
   .info-header {
     width: 50%;
@@ -263,6 +288,7 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 
   h1 {
     color: #013f7e !important;
+    font-size: 2.4rem;
   }
 
   .flip-box {
@@ -274,7 +300,22 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 
     &-front,
     &-back {
-      background-image: url('/img/products&promo/violet-coffee.png');
+      background-image: url('/img/gym-gallery/10.jpg'),
+        linear-gradient(
+          to right top,
+          #000000,
+          #161616,
+          #242424,
+          #343434,
+          #444444,
+          #565656,
+          #696969,
+          #7d7d7d,
+          #989898,
+          #b5b5b5,
+          #d2d2d2,
+          #f0f0f0
+        );
       background-size: cover;
       background-position: center;
       border-radius: 8px;
@@ -345,106 +386,64 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
       text-transform: uppercase;
     }
   }
+
+  @media screen and (max-width: 1600px) {
+    padding: 10rem 2rem 15rem 2rem;
+  }
+
+  @media screen and (max-width: 1140px) {
+    padding: 10rem 7rem;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 10rem 5rem 15rem 5rem;
+  }
+
+  @media screen and (max-width: 760px) {
+    padding: 10rem 8rem 15rem 8rem;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 10rem 3rem 15rem 3rem;
+  }
 }
 /*-- End Product Section --*/
 
 /*-- Start Gallery Section --*/
-
-/*
 #gym {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  background: rgb(116, 116, 116);
+  background: linear-gradient(
+    0deg,
+    rgba(116, 116, 116, 1) 0%,
+    rgba(218, 216, 216, 1) 100%
+  );
+
+  border-top: 1px solid black;
 
   & h1 {
     position: relative;
     height: auto;
-    width: 550px;
+    width: 20%;
     left: 50%;
     transform: translateX(-50%);
-    margin: 5% 0 2% 0;
+    // margin: 5% 0 1% 0;
     text-align: center;
     font-size: 2.8rem;
     font-weight: 500;
     letter-spacing: 1.5px;
-    color: #013f7e;
-    border-left: 5px solid #017bf5;
-    border-right: 5px solid #017bf5;
-    background: rgba(0, 0, 0, 0.05);
-  }
-
-  & p {
-    position: relative;
-    height: auto;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    color: #777;
-  }
-
-  .gallery {
-    position: relative;
-    height: auto; // тука мамата си е балу остатищ ауто и grid-auto-flow: dense; вече въобще не баца
-    width: 90%;
-    margin: auto;
-    padding: 45px 0;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    grid-auto-flow: dense;
-
-    & img {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      object-fit: cover;
-    }
-
-    & .img:first-child {
-      grid-column-start: span 1;
-      grid-row-end: span 1;
-    }
-
-    & .img:nth-child(2n + 3) {
-      grid-row-start: span 1;
-    }
-
-    & .img:nth-child(4n + 5) {
-      grid-column-start: span 2;
-      grid-row-start: span 2;
-    }
-
-    & .img:nth-child(6n + 7) {
-      grid-row-start: span 1;
-    }
-
-    & .img:nth-child(8n + 9) {
-      grid-column-start: span 1;
-      grid-row-start: span 1;
-    }
-  }
-}
-*/
-// filter: grayscale(0) brightness(1);
-
-#gym {
-  & h1 {
-    position: relative;
-    height: auto;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 5% 0 1% 0;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    color: #013f7e;
-    padding: 0.5rem;
-    border: 1px solid #017bf5;
+    padding: 3rem 0 1rem;
+    color: #fff;
+    border-bottom: 1px solid #013f7e;
   }
 
   & p {
@@ -454,7 +453,8 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
     font-weight: 500;
     font-size: 1.4rem;
     letter-spacing: 1px;
-    color: black;
+    color: #fff;
+    padding: 0 !important;
   }
 
   .grid-wrap {
@@ -529,6 +529,11 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
   @media screen and (max-width: 540px) {
     h1 {
       font-size: 1.5rem;
+      width: 40%;
+    }
+
+    p {
+      font-size: 1.1rem;
     }
 
     .grid-wrap {
@@ -548,8 +553,6 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
     }
   }
 }
-
-// 540px 	720px 	960px 	1140px 	1320px
 /*-- End Gallery Section --*/
 
 /*-- Start Subscribe Section --*/
@@ -652,203 +655,3 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 }
 
 /*-- End Footer Section --*/
-
-/*-- FLIPPY SHIT CARD --*/
-/*
-#plans {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: rgba(230, 230, 230, 0.3);
-  color: #013f7e;
-
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .game {
-    position: relative;
-
-    color: #fff;
-    background: rgb(42, 42, 42);
-    cursor: pointer;
-
-    & .rank {
-      position: absolute;
-      top: 0;
-      right: 0.7rem;
-      font-size: 75%;
-      font-weight: bold;
-      background: rgba(0, 0, 0, 0.65);
-      padding: 0.5em 0.5em 0.75em;
-      clip-path: polygon(100% 1%, 100% 100%, 50% 80%, 0% 100%, 0 53%, 0% 0%);
-      z-index: 1000;
-      transition: transform 250ms ease-in-out;
-    }
-
-    .front {
-      transition: 250ms;
-      position: relative;
-      z-index: 2;
-
-      & .thumbnail {
-        border: 1px solid black;
-        border-radius: 12px;
-      }
-
-      .name {
-        margin: 0.75rem 0;
-        margin-bottom: 3rem;
-      }
-
-      .stats {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-
-    .back {
-      opacity: 0;
-      position: absolute;
-      // bottom: 0;
-      top: 50%;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-
-      .streaming-info {
-        columns: 2;
-        column-rule: 1px solid rgba(0, 0, 0, 0.25);
-      }
-
-      .game-stat {
-        font-size: 1.1125rem;
-        text-align: center;
-
-        span {
-          font-size: 0.85rem;
-          display: block;
-        }
-      }
-
-      & .btn {
-        border: 0;
-        background: rgb(89, 0, 255);
-        border-radius: 100vw;
-        color: #fff;
-        padding: 0.5em 1.5em;
-        font-weight: bold;
-      }
-    }
-
-    .streamers {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      & img {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        border: 1px solid black;
-
-        &:nth-of-type(1) {
-          transform: translateX(50%);
-          z-index: 1;
-        }
-
-        &:nth-of-type(2) {
-          transform: translateX(25%);
-        }
-      }
-    }
-
-    & .front-background {
-      background-color: rgb(40, 46, 54);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transform: scale(0.2, 0.9);
-      border-radius: 12px;
-      z-index: 1;
-      opacity: 0;
-    }
-
-    &:hover {
-      .rank {
-        transform: translate(150%, -75%);
-      }
-
-      .front {
-        transform: translateY(-30%) scale(0.8);
-
-        .name {
-          animation: gameName 250ms forwards;
-        }
-
-        .stats {
-          opacity: 0;
-        }
-      }
-
-      .back {
-        opacity: 1;
-        z-index: 3;
-
-        .streamers {
-          width: 100%;
-        }
-
-        .streamer {
-          font-size: 0.9rem;
-        }
-
-        .name {
-          font-weight: bold;
-        }
-      }
-
-      .front-background {
-        transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1),
-          opacity 100ms linear;
-        opacity: 1;
-        transform: scale(1.4, 1.2);
-      }
-
-      @keyframes gameName {
-        0% {
-          text-align-last: left;
-          opacity: 1;
-        }
-        20% {
-          text-align-last: left;
-          opacity: 0;
-        }
-        60% {
-          text-align: center;
-          opacity: 0;
-          transform: scale(0.5);
-        }
-        100% {
-          text-align: center;
-          opacity: 1;
-          transform: scale(0.8);
-        }
-      }
-    }
-  }
-}
-*/
-/*--FLIPPY SHIT CARD END--*/
