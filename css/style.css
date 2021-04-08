@@ -387,12 +387,12 @@
 
 /*-- End Gallery Section --*/
 /*TEST SECTION*/
-#deserve .gradient {
+#motivation-call .gradient {
   background-color: transparent;
   background-image: linear-gradient(30deg, #00388c 0%, #19b0b8 100%);
   padding: 100px 0;
   transition: background 0.6s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; }
-  #deserve .gradient:hover {
+  #motivation-call .gradient:hover {
     background-color: transparent;
     background-image: linear-gradient(190deg, #00388c 0%, #19b0b8 100%);
     box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.37) inset; }
@@ -468,3 +468,46 @@
     font-size: 15px; }
 
 /*-- End Footer Section --*/
+/*-- Social Icon Section --*/
+#social {
+  font-family: tahoma; }
+  #social .sidebar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); }
+    #social .sidebar-list {
+      margin: 0;
+      padding: 0; }
+      #social .sidebar-list__item {
+        list-style: none;
+        margin: 5px 0; }
+        #social .sidebar-list__item .social-button {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 25px;
+          color: #fff;
+          background: #16a085;
+          display: block;
+          text-align: center;
+          position: relative; }
+          #social .sidebar-list__item .social-button__back {
+            position: absolute;
+            top: 0;
+            left: -120px;
+            width: 120px;
+            height: 50px;
+            color: #000;
+            background: #fff;
+            font-size: 15px;
+            z-index: -1;
+            opacity: 0;
+            backface-visibility: hidden;
+            transition: 0.5s; }
+        #social .sidebar-list__item:hover .social-button__back {
+          opacity: 1;
+          backface-visibility: visible;
+          left: 50px; }
+
+/*-- End Social Icon Section --*/
