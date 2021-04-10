@@ -28,7 +28,10 @@
 /*-- End Navbar --*/
 /*Start Carousel Slider*/
 .carousel-item {
-  height: 100vh; }
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .carousel-caption {
   text-transform: uppercase;
@@ -232,13 +235,13 @@
       transform: rotateY(0deg);
       transform-style: preserve-3d; }
       #products .flip-box-front_img-1 {
-        background-image: url(/img/gym-gallery/21.jpg); }
+        background-image: url(/img/gym-gallery/1.jpg); }
       #products .flip-box-front_img-2 {
-        background-image: url(/img/gym-gallery/alex1.jpg); }
+        background-image: url(https://source.unsplash.com/random/560x560); }
       #products .flip-box-front_img-3 {
-        background-image: url(/img/gym-gallery/22.jpg); }
+        background-image: url(https://source.unsplash.com/random/561x561); }
       #products .flip-box-front_img-4 {
-        background-image: url(/img/gym-gallery/23.jpg); }
+        background-image: url(https://source.unsplash.com/random/562x563); }
     #products .flip-box:hover .flip-box-front {
       transform: rotateY(-180deg);
       transform-style: preserve-3d; }
@@ -250,13 +253,13 @@
       transform: rotateY(180deg);
       transform-style: preserve-3d; }
       #products .flip-box-back_img-1 {
-        background-image: url(/img/gym-gallery/21.jpg); }
+        background-image: url(/img/gym-gallery/2.jpg); }
       #products .flip-box-back_img-2 {
-        background-image: url(/img/gym-gallery/alex2.jpg); }
+        background-image: url(https://source.unsplash.com/random/561x561); }
       #products .flip-box-back_img-3 {
-        background-image: url(/img/gym-gallery/22.jpg); }
+        background-image: url(https://source.unsplash.com/random/562x562); }
       #products .flip-box-back_img-4 {
-        background-image: url(/img/gym-gallery/23.jpg); }
+        background-image: url(https://source.unsplash.com/random/563x563); }
     #products .flip-box:hover .flip-box-back {
       transform: rotateY(0deg);
       transform-style: preserve-3d; }
@@ -272,11 +275,11 @@
       top: 50%; }
     #products .flip-box-header {
       font-size: 30px;
-      background-color: black; }
+      background-color: rgba(0, 0, 0, 0.3); }
     #products .flip-box p {
       font-size: 20px;
       line-height: 1.5rem;
-      background-color: black; }
+      background-color: rgba(0, 0, 0, 0.3); }
     #products .flip-box-img {
       margin-top: 25px; }
     #products .flip-box-button {
@@ -474,7 +477,7 @@
   #social .sidebar {
     position: fixed;
     top: 50%;
-    left: 20px;
+    right: 20px;
     transform: translateY(-50%); }
     #social .sidebar-list {
       margin: 0;
@@ -495,7 +498,7 @@
           #social .sidebar-list__item .social-button__back {
             position: absolute;
             top: 0;
-            left: -120px;
+            left: 120px;
             width: 120px;
             height: 50px;
             color: #000;
@@ -508,6 +511,6 @@
         #social .sidebar-list__item:hover .social-button__back {
           opacity: 1;
           backface-visibility: visible;
-          left: 50px; }
+          left: -120px; }
 
 /*-- End Social Icon Section --*/

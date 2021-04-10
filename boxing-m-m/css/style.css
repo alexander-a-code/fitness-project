@@ -20,11 +20,11 @@ body {
   background-size: cover;
 }
 .carousel-image-2 {
-  background: url(../img/image2.jpg);
+  background: url(https://source.unsplash.com/random/561x561);
   background-size: cover;
 }
 .carousel-image-3 {
-  background: url(../img/image3.jpg);
+  background: url(https://source.unsplash.com/random/562x562);
   background-size: cover;
 }
 
